@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Intro</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="calculator.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    {{ message }}
+    <div>1st number: <input type="text" v-model="number_1"></div>
+    <div>2nd number: <input type="text" v-model="number_2"></div>
+    <div>3rd number: <input type="text" v-model="number_3"></div>
+    <div><button v-on:click="computeSum">Compute sum</button></div>
+    <p>The sum is: {{sum}} </p>
+    <div><button @click.self="computeMultiplication">Compute Multiplication</button></div>
+    <p>The product is: {{multiplication}} </p>
+  </div>
+</body>
+</html>

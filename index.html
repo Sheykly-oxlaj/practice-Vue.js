@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Practice Vue.js</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <h1>Hello from HTML!</h1>
+  <div id="app">
+    <h1>{{ message }}</h1>
+    <h1>{{ hello }}</h1>
+    <div>
+      <button v-on:click="changeMessage()">Click Me </button>
+      <input type="text" v-model.trim.lazy="hello">
+      <!-- <p> {{ hello }}</p> -->
+
+      <!-- <li v-for="purple_hippo in greetings">
+        {{purple_hippo.greeting}}
+       </li> -->
+
+      <!-- <li> VS <div> -->
+        
+      <div v-for="purple_hippo in greetings">
+        <p>{{purple_hippo.greeting}}</p>
+      </div>
+      <p>_____________________________________________</p>
+      <div v-for="fruit in fruits">
+        <p> {{fruit}}</p>
+      </div>
+        <input type="text" v-model="newFruit">
+        <button v-on:click="addNewFruit"> Add a Fruit</button>
+      </div>
+  </div>
+ 
+
+</body>
+
+</html>
+
+
+
+
