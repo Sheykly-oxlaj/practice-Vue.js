@@ -34,6 +34,11 @@
         <input type="text" v-model="newFruit">
         <button v-on:click="addNewFruit"> Add a Fruit</button>
       </div>
+      <p>_____________________________________________</p>
+      <div>
+        <button v-on:click="showGreeting = !showGreeting">Toggle</button>
+        <h3 v-if="showGreeting">Happy Friday!!!!</h3>
+      </div>
   </div>
  
 

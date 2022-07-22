@@ -13,6 +13,7 @@ var App = {
       ],
       fruits: ["apple", "banana", "peach"],
       newFruit: "",
+      showGreeting: false,
     };
   },
   methods: {
