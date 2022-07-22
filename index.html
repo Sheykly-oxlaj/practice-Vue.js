@@ -6,6 +6,12 @@
   <title>Practice Vue.js</title>
   <script src="https://unpkg.com/vue@next"></script>
   <script src="index.js" defer></script>
+  <style>
+    .disabled {
+      color: gray;
+      transition: color 1s ease;
+    }
+  </style>
 </head>
 
 <body>
@@ -37,8 +43,11 @@
       <p>_____________________________________________</p>
       <div>
         <button v-on:click="showGreeting = !showGreeting">Toggle</button>
-        <h3 v-if="showGreeting">Happy Friday!!!!</h3>
+        <!-- <h3 v-if="showGreeting">Happy Friday!!!!</h3> -->
+        <h3 v-bind:class="{disabled: showGreeting}">Happy Friday!!!!</h3>
       </div>
+
+
   </div>
  
 
