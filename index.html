@@ -11,10 +11,15 @@
       color: darkgrey;
       transition: color 1s ease;
     }
+    .purple {
+      color: purple;
+      transition: 2s ease;
+    }
     .blue {
       color: blue;
-      transition: color 1s ease;
+      transition: color 3s ease;
     }
+   
   </style>
 </head>
 
@@ -54,7 +59,7 @@
 
       <div>
         <input type="checkbox" v-on:click="showGreeting_2 = !showGreeting_2" > Click Me! </input>
-        <p v-bind:class="{blue: showGreeting_2}">It is almost the weekend!!!!!!!!!!</p>
+        <p v-bind:class="{purple: showGreeting_2}">It is almost the weekend!!!!!!!!!!</p>
         <h2 v-bind:class="{blue: showGreeting_2}">It is almost the weekend!!!!!!!!!!</h2>
       </div>
 
