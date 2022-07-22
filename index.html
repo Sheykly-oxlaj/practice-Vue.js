@@ -8,7 +8,11 @@
   <script src="index.js" defer></script>
   <style>
     .disabled {
-      color: gray;
+      color: darkgrey;
+      transition: color 1s ease;
+    }
+    .blue {
+      color: blue;
       transition: color 1s ease;
     }
   </style>
@@ -46,7 +50,13 @@
         <!-- <h3 v-if="showGreeting">Happy Friday!!!!</h3> -->
         <h3 v-bind:class="{disabled: showGreeting}">Happy Friday!!!!</h3>
       </div>
+      <p>_____________________________________________</p>
 
+      <div>
+        <input type="checkbox" v-on:click="showGreeting_2 = !showGreeting_2" > Click Me! </input>
+        <p v-bind:class="{blue: showGreeting_2}">It is almost the weekend!!!!!!!!!!</p>
+        <h2 v-bind:class="{blue: showGreeting_2}">It is almost the weekend!!!!!!!!!!</h2>
+      </div>
 
   </div>
  

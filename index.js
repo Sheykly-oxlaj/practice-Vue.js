@@ -13,7 +13,8 @@ var App = {
       ],
       fruits: ["apple", "banana", "peach"],
       newFruit: "",
-      showGreeting: false,
+      showGreeting: true,
+      showGreeting_2: false,
     };
   },
   methods: {
